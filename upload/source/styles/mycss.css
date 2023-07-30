@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background: linear-gradient(90deg, #E60CD9 0%, #EC6013 100%);
+    font-family: Roboto, serif;
+}
+p{
+    color: white;
+}
+
+.nav-link{
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active{
+color:beige;
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: beige;
+}
+
+.card>img{
+    height: 320px;
+     width: 100%;
+}
+
+.sidebar{
+    color: rgb(255, 255, 255);
+background-color:rgba(202, 93, 241, 0.74);    
+}
+.card-title{
+font-weight: bold;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.slide-text, .footer-text{
+    color: white;
+    margin:auto auto;
+}
+
+.carousel-item img{
+    height: 450px;
+     width: 100%;
+}
+
+.footer-text{
+font-size: 0.8rem;
+margin: auto auto;
+}
+
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary{
+    background-color: rgb(115, 117, 115);
+}
+
+.call-anim{
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+
+
+.call-text{
+    animation: call-text-anim 2s ease 0s infinite normal forwards;
+
+}
+
+@keyframes call-text-anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+@media (max-width: 755px) {
+.carousel-indicators{
+    display: none;
+}
+}
